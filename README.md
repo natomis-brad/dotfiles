@@ -17,7 +17,7 @@ This repo is for storing my public config files, canonically called "dotfiles". 
 ```zsh
 alias dotty='GIT_WORK_TREE=~ GIT_DIR=~/.dotfiles'
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-git clone --bare git@github.com:mattmc3/dotfiles $HOME/.dotfiles
+git clone --bare git@github.com:natomis-brad/dotfiles $HOME/.dotfiles
 dotfiles checkout
 if [[ $? == 0 ]]; then
   echo "Checked out dotfiles.";
@@ -68,5 +68,5 @@ Certain legacy apps don't properly use .config, so anything that doesn't has a s
 [homebrew]:                  https://brew.sh
 [rsync]:                     http://man7.org/linux/man-pages/man1/rsync.1.html
 [stow]:                      https://www.gnu.org/software/stow/
-[terminal]:                  https://raw.githubusercontent.com/mattmc3/dotfiles/resources/images/zsh_terminal.png
-[terminal_gif]:              https://raw.githubusercontent.com/mattmc3/dotfiles/resources/img/zdotdir.gif
+[terminal]:                  https://raw.githubusercontent.com/natomis-brad/dotfiles/resources/images/zsh_terminal.png
+[terminal_gif]:              https://raw.githubusercontent.com/natomis-brad/dotfiles/resources/img/zdotdir.gif
