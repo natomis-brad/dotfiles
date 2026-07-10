@@ -57,6 +57,16 @@ git config submodule.recurse true
 
 Certain legacy apps don't properly use .config, so anything that doesn't has a simple wrapper in `$HOME` that then sources the real files from `~/.config`.
 
+## More Notes
+Replaced the makefile with a justfile.
+I was struggling to get the exact files that I wanted to use to create symlinks.
+For files that you want to ignore use .stow-local-ignore.
+For files that you do not want to ignore use .stow-packages.
+
+If you want to put a file in a specific place use an arrow -> like this:
+.claude/settings.json -> .claude/settings.json
+
+
 ## Resources
 
 - [Managing dotfiles with a bare git repo](https://www.atlassian.com/git/tutorials/dotfiles)
