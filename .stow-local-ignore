@@ -4,6 +4,9 @@
 \.gitignore
 \.vscode
 \.stow-local-ignore
+\.envrc
+\.agents
+\.stow-packages
 bak
 docs
 makefile
@@ -11,3 +14,4 @@ LICENSE
 README.md
 readme.md
 \.zsh_custom
+\.claude\.json

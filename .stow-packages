@@ -1,0 +1,7 @@
+# paths (relative to .dotfiles) that `just stow .stow-packages` should
+# symlink as a single whole file/directory, rather than the default
+# `--no-folding` per-file linking that the plain `just stow` uses.
+#
+# one path per line, lines starting with # are ignored.
+
+.agents
