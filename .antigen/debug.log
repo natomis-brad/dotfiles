@@ -1,0 +1,41 @@
+[WRN][1783688596.4976298809] antigen.zsh:266
+[WRN][1783688596.4976298809] -antigen-interactive-mode: toplevel:file:shfunc:shfunc $_ANTIGEN_INTERACTIVE = 
+[TRA][1783688596.4979329109] antigen.zsh:475
+[TRA][1783688596.4979329109] Gonna create compdump file @ env-setup COMPDUMP
+[TRA][1783688596.4979329109] TRACE
+-antigen-env-setup
+antigen.zsh
+[TRA][1783688602.9105129242] antigen.zsh:808
+[TRA][1783688602.9105129242] Called antigen-bundle with zsh-users/zsh-syntax-highlighting BUNDLE
+[TRA][1783688602.9105129242] TRACE
+antigen-bundle
+antigen
+[TRA][1783688612.1607439518] antigen.zsh:808
+[TRA][1783688612.1607439518] Called antigen-bundle with git BUNDLE
+[TRA][1783688612.1607439518] TRACE
+antigen-bundle
+antigen
+[TRA][1783688636.7563369274] antigen.zsh:808
+[TRA][1783688636.7563369274] Called antigen-bundle with --loc=lib BUNDLE
+[TRA][1783688636.7563369274] TRACE
+antigen-bundle
+-antigen-use-oh-my-zsh
+antigen-use
+antigen
+[TRA][1783688726.4117949009] antigen.zsh:808
+[TRA][1783688726.4117949009] Called antigen-bundle with --loc=themes/awesomepanda --btype=theme BUNDLE
+[TRA][1783688726.4117949009] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1783688999.2089869976] antigen.zsh:808
+[TRA][1783688999.2089869976] Called antigen-bundle with robbyrussell/oh-my-zsh plugins/ant BUNDLE
+[TRA][1783688999.2089869976] TRACE
+antigen-bundle
+antigen
+[TRA][1783689022.2723920345] antigen.zsh:808
+[TRA][1783689022.2723920345] Called antigen-bundle with --loc=themes/robbyrussell --btype=theme BUNDLE
+[TRA][1783689022.2723920345] TRACE
+antigen-bundle
+antigen-theme
+antigen

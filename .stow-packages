@@ -3,5 +3,26 @@
 # `--no-folding` per-file linking that the plain `just stow` uses.
 #
 # one path per line, lines starting with # are ignored.
-
+# format: source [-> target]  (target defaults to source, both relative
+# to .dotfiles / $HOME respectively)
 .agents
+.antigen
+.bash_profile
+.bashrc
+.config
+.editorconfig
+.gitconfig
+.gitflow_export
+.gitmodules
+.hammerspoon
+.homebrew
+.oh-my-zsh
+.omz-plus
+.tokensave
+.vimrc
+.vscode
+.zprofile
+.zshenv
+.zshrc
+.claude/settings.json -> .claude/settings.json
+antigen.zsh

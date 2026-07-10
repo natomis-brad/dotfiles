@@ -4,11 +4,12 @@
 \.gitignore
 \.vscode
 \.stow-local-ignore
-\.envrc
 \.agents
+\.envrc
 \.stow-packages
 bak
 docs
+justfile
 makefile
 LICENSE
 README.md

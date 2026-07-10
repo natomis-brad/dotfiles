@@ -1,0 +1,65 @@
+[user]
+	name = Brad Bates
+	email = brad@jtbatesgroup.com
+	signingKey = DAAB752B2DC2D0ADB5ED576D66679039D42E3AB7
+[core]
+	excludesfile = /Users/tbbates/.gitignore_global
+	autocrlf = input
+	hooksPath = /Users/tbbates/.config/git/hooks
+[diff]
+	tool = araxis
+[merge]
+	tool = araxis
+[difftool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/araxisgitmerge-w.sh \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = current
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	amend = commit -a --amend
+	co = checkout
+	cob = checkout -b
+	s = status -sb
+	l = log --graph --pretty=format:\"%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset\"
+	ls = log --pretty=format:\"%C(yellow)%h%C(cyan)%d%C(green) %s %C(white)- %an, %ar%Creset\" --decorate --numstat
+	d = diff --color-words
+	wip = !git add . && git commit -m \"WIP\"
+	cm = "!git add . && git commit -m "
+	undo = !git add -A && git commit -qm \"UNDO SAVEPOINT\" && git reset HEAD~1 --hard
+	bclean = "!f() { git branch --merged ${1-master} | grep -v \" ${1-master}$\" | xargs git branch -d; }; f"
+	bdone = "!f() { git checkout ${1-master} && git sync && git bclean ${1-master}; }; f"
+	la = !git config -l | grep alias | cut -c 7-
+	b = !git for-each-ref --sort=\"-authordate\" --format=\"%(authordate)%09%(objectname:short)%09%(refname)\" refs/heads | sed -e \"s-refs/heads/--\"
+	ready = rebase -i master
+	ready-root = rebase -i --root
+	sync = !git pull --rebase --prune $@ && git submodule update --init --recursive
+	upstream = "!f() { git remote add upstream https://github.com/$1.git; }; f"
+	syncu = "!f() { git checkout ${1-master} && git fetch upstream && git rebase upstream/master; }; f"
+	type = cat-file -t
+	dump = cat-file -p
+	pv = !git push --tag && git push
+	r = remote -v
+	pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr-$1 && git checkout pr-$1; }; f"
+	pr-clean = "!git for-each-ref refs/heads/pr-* --format=\"%(refname)\" | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
+	ad = difftool --tool=araxis --dir-diff
+	ads = difftool --tool=araxis --dir-diff --staged
+[commit]
+	template = /Users/tbbates/.stCommitMsg
+	gpgsign = false
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[difftool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "araxis"]
+	path = /Applications/Araxis Merge.app/Contents/Utilities/compare
+[init]
+	defaultBranch = main
