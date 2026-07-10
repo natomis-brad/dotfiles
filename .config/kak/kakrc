@@ -1,4 +1,0 @@
-colorscheme tomorrow-night
-define-command -docstring "Example Lua plugin" run-example %sh{
-    lua $HOME/.config/kak/plugins/example.lua
-}
