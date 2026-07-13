@@ -4,6 +4,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+[ -d "$ZSH" ] || git clone https://github.com/ohmyzsh/ohmyzsh $ZSH
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -66,6 +68,8 @@ zstyle ':omz:update' frequency 13
 # ZSH_CUSTOM=/path/to/new-custom-folder
 ##zsh_custom=(~/Projects/Github/ZSH_CUSTOM)
 
+zsh_custom=( mattmc3/zsh_custom )
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -100,8 +104,6 @@ plugins=(
   	extract
   	zoxide
   	git
-  	jtb
-	prj
 
 
   	# Colors

@@ -1,0 +1,12 @@
+{
+  "trustedtaps": [
+    "mattmc3/brews",
+    "nohajc/anylinuxfs"
+  ],
+  "trustedcasks": [
+    "fenio/tap/anylinuxfs-gui"
+  ],
+  "trustedformulae": [
+    "nohajc/anylinuxfs/anylinuxfs"
+  ]
+}

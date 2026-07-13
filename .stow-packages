@@ -16,8 +16,6 @@
 .gitmodules
 .hammerspoon
 .homebrew
-.oh-my-zsh
-.omz-plus
 .tokensave
 .vimrc
 .vscode
