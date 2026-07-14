@@ -4,9 +4,11 @@
     "nohajc/anylinuxfs"
   ],
   "trustedcasks": [
-    "fenio/tap/anylinuxfs-gui"
+    "fenio/tap/anylinuxfs-gui",
+    "netbirdio/tap/netbird-ui"
   ],
   "trustedformulae": [
+    "netbirdio/tap/netbird",
     "nohajc/anylinuxfs/anylinuxfs"
   ]
 }

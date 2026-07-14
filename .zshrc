@@ -80,12 +80,11 @@ plugins=(
 	#Essentials  
 	brew
 	#zsh-syntax-highlighting 
-	#fast-syntax-highlighting
-	#zsh-autosuggestions 
-	#zsh-completions 
+	zdharma-continuum/fast-syntax-highlighting
+	zsh-users/zsh-autosuggestions 
+	zsh-users/zsh-completions 
   	history-substring-search
 	fzf
-	aloxaf/fzf-tab
 
      
   	# Clipboard
@@ -98,7 +97,6 @@ plugins=(
 
 
   	# Utils
-  	otp
   	direnv
   	macos
   	extract
@@ -160,6 +158,4 @@ export JTB_SSH_KEY="${JTB_SSH_KEY:-$HOME/.ssh/github_jtb}"
 export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
 
 export PATH=$PATH:/Users/tbbates/.local/bin
-
-# OpenClaw Completion
-[ -f "/Users/brad/.openclaw/completions/openclaw.zsh" ] && source "/Users/brad/.openclaw/completions/openclaw.zsh"
+export PATH="$PATH:/Users/brad/.dotnet/tools"
