@@ -5,8 +5,9 @@
 # one path per line, lines starting with # are ignored.
 # format: source [-> target]  (target defaults to source, both relative
 # to .dotfiles / $HOME respectively)
+Claude.md
 .agents
-.antigen
+.zsh_plugins
 .bash_profile
 .bashrc
 .config
@@ -22,5 +23,6 @@
 .zprofile
 .zshenv
 .zshrc
+.zsh_plugins.txt
+.zsh_plugins.zsh
 .claude/settings.json -> .claude/settings.json
-antigen.zsh

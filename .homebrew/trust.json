@@ -5,9 +5,12 @@
   ],
   "trustedcasks": [
     "fenio/tap/anylinuxfs-gui",
-    "netbirdio/tap/netbird-ui"
+    "netbirdio/tap/netbird-ui",
+    "wouterdebie/tap/davit"
   ],
   "trustedformulae": [
+    "aovestdipaperino/tap/tokensave",
+    "chandlerroth/tap/prj",
     "netbirdio/tap/netbird",
     "nohajc/anylinuxfs/anylinuxfs"
   ]

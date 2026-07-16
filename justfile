@@ -11,8 +11,8 @@ submodules:
     git submodule update --recursive --remote
 
 # create symlinks to dotfiles. pass config="" for the full-tree, per-file
-# no-folding stow instead of the default .stow-packages whole-item symlinks.
-stow config=".stow-packages":
+# no-folding stow instead of the default stow-packages whole-item symlinks.
+stow config="stow-packages":
     #!/usr/bin/env bash
     set -euo pipefail
     if [ -z "{{config}}" ]; then
@@ -29,8 +29,8 @@ stow config=".stow-packages":
     fi
 
 # remove symlinks to dotfiles. pass config="" for the full-tree, per-file
-# no-folding unstow instead of the default .stow-packages whole-item symlinks.
-unstow config=".stow-packages":
+# no-folding unstow instead of the default stow-packages whole-item symlinks.
+unstow config="stow-packages":
     #!/usr/bin/env bash
     set -euo pipefail
     if [ -z "{{config}}" ]; then
