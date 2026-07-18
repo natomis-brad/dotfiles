@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="vscode-mermaid-preview" Version="2.1.2" Publisher="vstirbu" />
+			<DisplayName>Mermaid Preview</DisplayName>
+			<Description xml:space="preserve">Mermaid diagram previewer for Visual Studio Code, now maintained by the creators of Mermaid.js</Description>
+			<Tags>mermaid charts,MermaidCharts,mermaid,diagram,mermaid chart,visio,flowchart,sequence diagram,gantt,pie chart,class diagram,state diagram,entity relationship diagram,user journey diagram,user journey,journey,pie,sequence,flow,flow chart,gantt chart,architecture,uml,theme,color-theme,keybindings,Mermaid,__ext_mmd,__ext_mermaid,mermaid.flowchart,Mermaid Flowchart,mermaid flowchart,mermaid.sequenceDiagram,Mermaid Sequence Diagram,mermaid sequence diagram,mermaid.erDiagram,Mermaid Er Diagram,mermaid er diagram,mermaid.c4Diagram,Mermaid C4 Diagram,mermaid c4 diagram,mermaid.classDiagram,Mermaid Class Diagram,mermaid class diagram,mermaid.gantt,Mermaid Gantt,mermaid gantt,mermaid.gitGraph,Mermaid GitGraph,mermaid gitgraph,mermaid.info,Mermaid Info,mermaid info,mermaid.journey,Mermaid Journey,mermaid journey,mermaid.pie,Mermaid Pie,mermaid pie,mermaid.requirementDiagram,Mermaid Requirement Diagram,mermaid requirement diagram,mermaid.stateDiagram,Mermaid State Diagram,mermaid state diagram,mermaid.quadrantChart,Mermaid quadrantChart,mermaid QuadrantChart,mermaid.mindmap,Mermaid mindmap,mermaid Mindmap,mermaid.timeline,Mermaid timeline,mermaid Timeline,mermaid.sankey,Mermaid sankey,mermaid SankeyDiagram,mermaid.xychart,Mermaid xychart,mermaid Xychart,mermaid.kanban,Mermaid kanban,mermaid Kanban,mermaid.block,Mermaid blockDiagram,mermaid BlockDiagram,mermaid.architecture,Mermaid architecture,mermaid Architecture,mermaid.packet,Mermaid packet,mermaid Packet,mermaid.zenuml,Mermaid zenuml,mermaid Zenuml,mermaid.radar,Mermaid Radar,mermaid radar,javascript</Tags>
+			<Categories>Visualization</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.77.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.EnabledApiProposals" Value="languageModelToolsForAgent" />
+				
+				<Property Id="Microsoft.VisualStudio.Code.ExecutesCode" Value="true" />
+				
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/vstirbu/vscode-mermaid-preview.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/vstirbu/vscode-mermaid-preview.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/vstirbu/vscode-mermaid-preview.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/vstirbu/vscode-mermaid-preview/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/vstirbu/vscode-mermaid-preview#readme" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#5c2d91" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			<License>extension/LICENSE.txt</License>
+			<Icon>extension/images/favicon.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/images/favicon.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

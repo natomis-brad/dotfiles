@@ -15,3 +15,4 @@ last_pricing_fetch_at = 0
 last_installed_version = ""
 previous_version = ""
 extraction_timeout_secs = 60
+wildcard_permissions = false

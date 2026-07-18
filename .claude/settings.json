@@ -165,5 +165,6 @@
     }
   },
   "tui": "fullscreen",
-  "theme": "auto"
+  "theme": "auto",
+  "model": "claude-fable-5[1m]"
 }

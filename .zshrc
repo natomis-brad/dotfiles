@@ -177,5 +177,7 @@ export JTB_PROJECTS="${JTB_PROJECTS:-$HOME/Projects/JTBates}"
 export JTB_SSH_KEY="${JTB_SSH_KEY:-$HOME/.ssh/github_jtb}"
 export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
 
+'$'() { $@; }
+
 export PATH=$PATH:/Users/tbbates/.local/bin
 export PATH="$PATH:/Users/brad/.dotnet/tools"
