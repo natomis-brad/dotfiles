@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "dependencies": {
+    "@microsoft/visualstudio-debugger-devkit.darwin-arm64": "18.3.0-beta.26208.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://devdiv.visualstudio.com/DevDiv/_git/VSDebugCore",
+    "branch": "main",
+    "commit": "a0f202c30712a60cb681f88dabb7854f45a437dc"
+  }
+}

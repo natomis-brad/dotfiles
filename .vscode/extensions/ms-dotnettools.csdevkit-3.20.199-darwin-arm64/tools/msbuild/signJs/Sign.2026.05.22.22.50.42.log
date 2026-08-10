@@ -1,0 +1,33 @@
+31> 22.22.50.42 Adding D:\a\_work\1\s\extension\dist\491.extension.js  cert (200)
+31> 22.22.50.42 Adding D:\a\_work\1\s\extension\dist\522.extension.js  cert (200)
+31> 22.22.50.42 Adding D:\a\_work\1\s\extension\dist\754.extension.js  cert (200)
+31> 22.22.50.42 Adding D:\a\_work\1\s\extension\dist\extension.js  cert (200)
+31> 22.22.50.42 Submitting files to be signed with certs (200),(LogID: 91b2b8a1).
+31> 22.22.50.47 Finished submitting files to be signed. (200),(LogID: 91b2b8a1)
+31> 22.22.50.47 All files in (200),(LogID: 91b2b8a1) successfully submitted.
+31> 22.22.50.47 Submitted Files : 
+ 754.extension.js 29c52f7d-dc7b-4bda-b1ab-bbd575d85da5 
+491.extension.js 98d995a2-64ca-4c7c-b290-b5b3e1833397 
+522.extension.js 4432b4ba-864d-4c66-987a-607f49249aa0 
+extension.js aa81b28b-fa6a-4d10-b46f-0a94723ad5ee 
+
+31> 22.22.50.47 Checking the status for some signed files. (200) (LogID: f62978f1)
+31> 22.22.50.50 OperationId: 4432b4ba-864d-4c66-987a-607f49249aa0 - Inprogress
+31> 22.22.50.50 OperationId: aa81b28b-fa6a-4d10-b46f-0a94723ad5ee - Inprogress
+31> 22.22.50.50 OperationId: 98d995a2-64ca-4c7c-b290-b5b3e1833397 - Inprogress
+31> 22.22.50.50 OperationId: 29c52f7d-dc7b-4bda-b1ab-bbd575d85da5 - Inprogress
+31> 22.22.50.50 Waiting 00:00:15 second(s) before retrying status...
+31> 22.22.51.05 Checking the status for some signed files. (200) (LogID: a17b9926)
+31> 22.22.51.07 Adding file D:\a\_work\1\s\extension\dist\491.extension.js for downloading...
+31> 22.22.51.07 Adding file D:\a\_work\1\s\extension\dist\522.extension.js for downloading...
+31> 22.22.51.07 Adding file D:\a\_work\1\s\extension\dist\extension.js for downloading...
+31> 22.22.51.07 Adding file D:\a\_work\1\s\extension\dist\754.extension.js for downloading...
+36> 22.22.51.07 Downloading file D:\a\_work\1\s\extension\dist\754.extension.js...
+33> 22.22.51.07 Downloading file D:\a\_work\1\s\extension\dist\491.extension.js...
+35> 22.22.51.07 Downloading file D:\a\_work\1\s\extension\dist\extension.js...
+34> 22.22.51.07 Downloading file D:\a\_work\1\s\extension\dist\522.extension.js...
+33> 22.22.51.08 Successfully downloaded file D:\a\_work\1\s\extension\dist\491.extension.js from ESRP.
+36> 22.22.51.08 Successfully downloaded file D:\a\_work\1\s\extension\dist\754.extension.js from ESRP.
+34> 22.22.51.08 Successfully downloaded file D:\a\_work\1\s\extension\dist\522.extension.js from ESRP.
+35> 22.22.51.08 Successfully downloaded file D:\a\_work\1\s\extension\dist\extension.js from ESRP.
+29> 22.22.51.10 Submitted all the files.

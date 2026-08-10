@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@microsoft/visualstudio-server-shared.darwin-arm64": "3.20.199",
+    "@microsoft/visualstudio-code-servicehost.darwin-arm64": "3.20.199",
+    "@microsoft/coverage-services.darwin-arm64": "3.20.199",
+    "@microsoft/visualstudio-controller.darwin-arm64": "3.20.199",
+    "@microsoft/visualstudio-reliability-monitor.darwin-arm64": "3.20.199",
+    "@microsoft/visualstudio-testwindow-vscode-service.darwin-arm64": "3.20.199",
+    "@microsoft/visualstudio-server.darwin-arm64": "3.20.199"
+  },
+  "private": true
+}

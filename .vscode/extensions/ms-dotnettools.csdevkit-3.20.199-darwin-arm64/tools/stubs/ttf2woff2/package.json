@@ -1,0 +1,6 @@
+{
+  "name": "ttf2woff2",
+  "version": "8.0.1",
+  "description": "No-op stub. The extension only generates WOFF (not WOFF2) fonts, so this native module is unnecessary. This stub prevents node-gyp/Python/C++ from being required during yarn install.",
+  "main": "index.js"
+}

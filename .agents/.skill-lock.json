@@ -11,13 +11,13 @@
       "updatedAt": "2026-07-10T05:56:58.445Z"
     },
     "caveman": {
-      "source": "JuliusBrussee/caveman",
+      "source": "juliusbrussee/caveman",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
+      "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
       "skillPath": "skills/caveman/SKILL.md",
       "skillFolderHash": "166040c027f7764d43df36abc5df0079bfc6394b",
       "installedAt": "2026-07-10T17:31:01.733Z",
-      "updatedAt": "2026-07-10T17:31:01.733Z"
+      "updatedAt": "2026-07-20T15:33:56.552Z"
     },
     "caveman-commit": {
       "source": "JuliusBrussee/caveman",

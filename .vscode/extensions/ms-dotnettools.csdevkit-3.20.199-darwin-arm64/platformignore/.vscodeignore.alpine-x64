@@ -1,0 +1,2 @@
+dist/native/win32-x64/**
+dist/native/win32-arm64/**

@@ -26,3 +26,7 @@ Claude.md
 .zsh_plugins.txt
 .zsh_plugins.zsh
 .claude/settings.json -> .claude/settings.json
+.codex/config.toml -> .codex/config.toml
+.gnupg
+.openclaw
+.openwolf

@@ -181,3 +181,7 @@ export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
 
 export PATH=$PATH:/Users/tbbates/.local/bin
 export PATH="$PATH:/Users/brad/.dotnet/tools"
+
+# Added by codebase-memory-mcp install
+export PATH="/Users/brad/.local/bin:$PATH"
+export PATH="/Users/brad/.local/bin:$PATH"

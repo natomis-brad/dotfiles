@@ -1,0 +1,209 @@
+notify = [
+    "/Users/brad/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient",
+    "turn-ended",
+]
+model = "gpt-5.6-sol"
+model_reasoning_effort = "medium"
+
+[projects."/Users/brad/Projects/hellowgpt"]
+trust_level = "trusted"
+
+[projects."/Users/brad/Projects/health/healthexport"]
+trust_level = "trusted"
+
+[projects."/Users/brad/Projects/JTBates/thinking/dua"]
+trust_level = "trusted"
+
+[projects."/Users/brad"]
+trust_level = "trusted"
+
+[projects."/Users/brad/Projects/JTBates/thinking/powerbi"]
+trust_level = "trusted"
+
+[projects."/Users/brad/Projects/JTBates/thinking/powerbi/semanticmodels/semantic model"]
+trust_level = "trusted"
+
+[tui]
+status_line = ["model-with-reasoning", "context-remaining", "used-tokens"]
+status_line_use_colors = true
+
+[tui.model_availability_nux]
+"gpt-5.6-sol" = 4
+
+[marketplaces.openai-bundled]
+last_updated = "2026-07-24T14:57:15Z"
+source_type = "local"
+source = "/Users/brad/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.caveman]
+last_updated = "2026-08-05T21:56:16Z"
+last_revision = "ec83e5bace4c20484d704dea21e12fc4eb94e9aa"
+source_type = "git"
+source = "https://github.com/JuliusBrussee/caveman.git"
+
+[marketplaces.claude-plugins-official]
+last_updated = "2026-08-07T15:42:15Z"
+last_revision = "157f15ec736cd2ea3bb47b94d412697e2fed6e19"
+source_type = "git"
+source = "https://github.com/anthropics/claude-plugins-official.git"
+
+[marketplaces.supergoal]
+last_updated = "2026-08-05T21:57:02Z"
+last_revision = "a8761ed5c5317e5f5f480b0f5069d97b146bf5b4"
+source_type = "git"
+source = "https://github.com/robzilla1738/supergoal.git"
+
+[marketplaces.superpowers-marketplace]
+last_updated = "2026-08-05T21:57:06Z"
+last_revision = "a100abbf486c0a3095b74ef5c39ebddf2a5b08f8"
+source_type = "git"
+source = "https://github.com/obra/superpowers-marketplace.git"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-07-24T14:49:42Z"
+source_type = "local"
+source = "/Users/brad/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[plugins."sites@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."caveman@caveman"]
+enabled = true
+
+[plugins."frontend-design@claude-plugins-official"]
+enabled = true
+
+[plugins."supergoal@supergoal"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."superpowers@superpowers-marketplace"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."superpowers@claude-plugins-official"]
+enabled = true
+
+[features]
+js_repl = false
+
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/Codex.app/Contents/Resources/cua_node/bin/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "/Applications/Codex.app/Contents/Resources/cua_node/lib/node_modules"
+NODE_REPL_NODE_PATH = "/Applications/Codex.app/Contents/Resources/cua_node/bin/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/brad/.codex"
+CODEX_HOME = "/Users/brad/.codex"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "3fdfe9a7ad39456da69c5e8fa7bbf7229ec2fe9de5f4cf2e476166bf30a08a7e,6d25aa7656feac858f3a3bdaea5bcbab0dbfd426c9de8e6931ce90c399ee8e4f"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = "Control desktop apps on macOS through Computer Use."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.721.31836"
+CODEX_CLI_PATH = "/Applications/Codex.app/Contents/Resources/codex"
+
+[mcp_servers.computer-use]
+command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient"
+args = ["mcp"]
+cwd = "."
+enabled = false
+
+[mcp_servers.codex]
+command = "codex"
+args = [
+    "-m",
+    "gpt-5.3-codex-max",
+    "-c",
+    "model_reasoning_effort=high",
+    "mcp-server",
+]
+
+[mcp_servers.context7]
+command = "npx"
+args = [
+    "-y",
+    "@upstash/context7-mcp@latest",
+]
+
+[mcp_servers.firecrawl]
+command = "npx"
+args = [
+    "-y",
+    "firecrawl-mcp",
+]
+
+[mcp_servers.firecrawl.env]
+FIRECRAWL_API_KEY = "fc-7bded69e14db475ba5547286e02064ec"
+
+[mcp_servers.github]
+url = "https://api.githubcopilot.com/mcp/"
+
+[mcp_servers.memory]
+command = "npx"
+args = [
+    "-y",
+    "@modelcontextprotocol/server-memory",
+]
+
+[mcp_servers.playwright]
+command = "npx"
+args = [
+    "-y",
+    "@playwright/mcp@latest",
+]
+
+[mcp_servers.supabase]
+command = "npx"
+args = [
+    "-y",
+    "@supabase/mcp-server-supabase@latest",
+    "--read-only",
+]
+
+[mcp_servers.supabase.env]
+SUPABASE_ACCESS_TOKEN = "sbp_959ad411b2366d496797f4e5c90125129734852e"
+
+[shell_environment_policy.set]
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "3fdfe9a7ad39456da69c5e8fa7bbf7229ec2fe9de5f4cf2e476166bf30a08a7e,6d25aa7656feac858f3a3bdaea5bcbab0dbfd426c9de8e6931ce90c399ee8e4f"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/brad/.codex"
+
+[desktop]
+conversationDetailMode = "STEPS_COMMANDS"
+ambient-suggestions-enabled = true
+followUpQueueMode = "steer"
+
+[hooks.state]
+
+[hooks.state."/Users/brad/.codex/hooks.json:pre_tool_use:0:0"]
+trusted_hash = "sha256:611801ec2e3d969b804521d5f231f6581b43d6af10a5b6406fab874286644e3b"
+
+[mcp_servers.codebase-memory-mcp]
+command = "/Users/brad/.local/bin/codebase-memory-mcp"

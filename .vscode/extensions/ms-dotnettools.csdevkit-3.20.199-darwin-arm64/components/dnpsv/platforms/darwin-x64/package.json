@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "dependencies": {
+    "@microsoft/vscode.projectsystem.managed.darwin-x64": "18.7.20-ga05dedcd31",
+    "@microsoft/vscode.templateengine.darwin-x64": "18.7.20-ga05dedcd31"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://devdiv.visualstudio.com/DevDiv/_git/dotnet-project-system",
+    "branch": "main",
+    "commit": "a05dedcd31dbf83f110d7207fd878a9ecf33350f"
+  }
+}
