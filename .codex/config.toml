@@ -23,8 +23,11 @@ trust_level = "trusted"
 [projects."/Users/brad/Projects/JTBates/thinking/powerbi/semanticmodels/semantic model"]
 trust_level = "trusted"
 
+[projects."/Users/brad/Projects/JTBates/thinking/sharepoint"]
+trust_level = "trusted"
+
 [tui]
-status_line = ["model-with-reasoning", "context-remaining", "used-tokens"]
+status_line = ["model-with-reasoning", "context-remaining", "used-tokens", "weekly-limit"]
 status_line_use_colors = true
 
 [tui.model_availability_nux]
@@ -36,14 +39,14 @@ source_type = "local"
 source = "/Users/brad/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
 [marketplaces.caveman]
-last_updated = "2026-08-05T21:56:16Z"
-last_revision = "ec83e5bace4c20484d704dea21e12fc4eb94e9aa"
+last_updated = "2026-08-10T19:53:38Z"
+last_revision = "309834233183478e6fd7800d26e1fbaa6210274e"
 source_type = "git"
 source = "https://github.com/JuliusBrussee/caveman.git"
 
 [marketplaces.claude-plugins-official]
-last_updated = "2026-08-07T15:42:15Z"
-last_revision = "157f15ec736cd2ea3bb47b94d412697e2fed6e19"
+last_updated = "2026-08-10T19:53:46Z"
+last_revision = "920824c3e9509890fbec03ba6097014222393022"
 source_type = "git"
 source = "https://github.com/anthropics/claude-plugins-official.git"
 
@@ -54,8 +57,8 @@ source_type = "git"
 source = "https://github.com/robzilla1738/supergoal.git"
 
 [marketplaces.superpowers-marketplace]
-last_updated = "2026-08-05T21:57:06Z"
-last_revision = "a100abbf486c0a3095b74ef5c39ebddf2a5b08f8"
+last_updated = "2026-08-10T19:53:48Z"
+last_revision = "7c77b4288d9bc9c7f3f7b347b00f9d51ec1d60af"
 source_type = "git"
 source = "https://github.com/obra/superpowers-marketplace.git"
 
@@ -204,6 +207,30 @@ followUpQueueMode = "steer"
 
 [hooks.state."/Users/brad/.codex/hooks.json:pre_tool_use:0:0"]
 trusted_hash = "sha256:611801ec2e3d969b804521d5f231f6581b43d6af10a5b6406fab874286644e3b"
+
+[hooks.state."/Users/brad/.codex/hooks.json:session_start:0:0"]
+trusted_hash = "sha256:d9e28c0e725dead06a06bc0efdf21d5fcf88f3c2232d049cd341552b6dec3140"
+
+[hooks.state."/Users/brad/Projects/JTBates/thinking/powerbi/.codex/hooks.json:pre_tool_use:0:0"]
+trusted_hash = "sha256:5e1cfa73be307ae55be28fabb3b326bb60312f80b35b40b2273470df4a8d6902"
+
+[hooks.state."/Users/brad/Projects/JTBates/thinking/powerbi/.codex/hooks.json:pre_tool_use:1:0"]
+trusted_hash = "sha256:95016cd80d729ba5636dc966262fc45708776d0b9289a6336b83b30d461db903"
+
+[hooks.state."/Users/brad/Projects/JTBates/thinking/powerbi/.codex/hooks.json:post_tool_use:0:0"]
+trusted_hash = "sha256:a30228ba466122b85f6910fbb959db31cb98cbc84e8418b5b26821674b480099"
+
+[hooks.state."/Users/brad/Projects/JTBates/thinking/powerbi/.codex/hooks.json:post_tool_use:1:0"]
+trusted_hash = "sha256:2b6ff620de847c35d0dcdd85cd5a40962987db717f3a05be9d937e52eef930bb"
+
+[hooks.state."/Users/brad/Projects/JTBates/thinking/powerbi/.codex/hooks.json:pre_compact:0:0"]
+trusted_hash = "sha256:e08f8caaa988304c3758041b506d2ce33af70e1cb8a605f7c573474bea223984"
+
+[hooks.state."/Users/brad/Projects/JTBates/thinking/powerbi/.codex/hooks.json:session_start:0:0"]
+trusted_hash = "sha256:62e2ee60c68694c3cdca6ffef73562603935c2abeb4424b6343413f3e8f57c58"
+
+[hooks.state."/Users/brad/Projects/JTBates/thinking/powerbi/.codex/hooks.json:stop:0:0"]
+trusted_hash = "sha256:a81d31aba48a9d7d6ad98a39a39b70846a0b5e352dbcc73c04d6a611533395c3"
 
 [mcp_servers.codebase-memory-mcp]
 command = "/Users/brad/.local/bin/codebase-memory-mcp"
