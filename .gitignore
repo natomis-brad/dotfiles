@@ -1,5 +1,8 @@
+.DS_Store
+zsh
 .envrc
 .oh-my-zsh
 .tokensave/global.db
 .config/zsh/.zsh_history
 .vscode/extensions
+.openclaw*

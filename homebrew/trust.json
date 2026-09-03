@@ -1,0 +1,8 @@
+{
+  "trustedtaps": [
+    "wouterdebie/tap"
+  ],
+  "trustedcasks": [
+    "wouterdebie/tap/davit"
+  ]
+}

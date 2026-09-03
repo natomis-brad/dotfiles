@@ -10,7 +10,6 @@ Claude.md
 .zsh_plugins
 .bash_profile
 .bashrc
-.config
 .editorconfig
 .gitconfig
 .gitflow_export
@@ -27,6 +26,12 @@ Claude.md
 .zsh_plugins.zsh
 .claude/settings.json -> .claude/settings.json
 .codex/config.toml -> .codex/config.toml
-.gnupg
 .openclaw
 .openwolf
+gh -> .config/gh
+git -> .config/git
+github-copilot -> .config/github-copilot
+homebrew -> .config/homebrew
+iterm2 -> .config/iterm2
+zed -> .config/zed
+zsh -> .config/zsh

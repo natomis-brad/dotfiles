@@ -7,6 +7,7 @@
 \.agents
 \.envrc
 \.stow-packages
+.config
 bak
 docs
 justfile
@@ -16,3 +17,5 @@ README.md
 readme.md
 \.zsh_custom
 \.claude\.json
+.gnupgs
+github-copilot
