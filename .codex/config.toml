@@ -26,12 +26,16 @@ trust_level = "trusted"
 [projects."/Users/brad/Projects/JTBates/thinking/sharepoint"]
 trust_level = "trusted"
 
+[projects."/Users/brad/Projects/JTBates/scripts/Exchange/purgemailbox"]
+trust_level = "trusted"
+
 [tui]
 status_line = ["model-with-reasoning", "context-remaining", "used-tokens", "weekly-limit"]
 status_line_use_colors = true
 
 [tui.model_availability_nux]
 "gpt-5.6-sol" = 4
+gpt-6-astra = 1
 
 [marketplaces.openai-bundled]
 last_updated = "2026-07-24T14:57:15Z"
@@ -232,5 +236,11 @@ trusted_hash = "sha256:62e2ee60c68694c3cdca6ffef73562603935c2abeb4424b6343413f3e
 [hooks.state."/Users/brad/Projects/JTBates/thinking/powerbi/.codex/hooks.json:stop:0:0"]
 trusted_hash = "sha256:a81d31aba48a9d7d6ad98a39a39b70846a0b5e352dbcc73c04d6a611533395c3"
 
+[hooks.state."/Users/brad/.codex/hooks.json:pre_tool_use:1:0"]
+trusted_hash = "sha256:29f2c24ce14835f0ef3110c2cfef9edb16671cede0385763096051cea430f16c"
+
 [mcp_servers.codebase-memory-mcp]
 command = "/Users/brad/.local/bin/codebase-memory-mcp"
+
+[mcp_servers.codebase-memory-mcp.tools.get_code_snippet]
+approval_mode = "approve"

@@ -180,6 +180,14 @@
             "command": "~/.claude/hooks/cbm-session-reminder"
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Users/brad/.claude/hooks/context-mode-cache-heal.mjs\""
+          }
+        ]
       }
     ],
     "SubagentStart": [
@@ -237,7 +245,6 @@
       }
     }
   },
-  "fastMode": true,
   "tui": "fullscreen",
   "theme": "auto",
   "editorMode": "normal",
