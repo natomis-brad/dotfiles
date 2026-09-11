@@ -48,6 +48,8 @@
 	pr-clean = "!git for-each-ref refs/heads/pr-* --format=\"%(refname)\" | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
 	ad = difftool --tool=araxis --dir-diff
 	ads = difftool --tool=araxis --dir-diff --staged
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	pull-all = pull --recurse-submodules
 [commit]
 	template = /Users/tbbates/.stCommitMsg
 	gpgsign = false
