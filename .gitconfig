@@ -1,7 +1,6 @@
 [user]
 	name = Brad Bates
 	email = brad@jtbatesgroup.com
-	signingKey = DAAB752B2DC2D0ADB5ED576D66679039D42E3AB7
 [core]
 	excludesfile = /Users/tbbates/.gitignore_global
 	autocrlf = input
@@ -54,9 +53,6 @@
 [commit]
 	template = /Users/tbbates/.stCommitMsg
 	gpgsign = true
-
-[includeIf "gitdir:**/JTBates/**/.git"]
-    path = ~/.gitconfig-jtbatesgroup
 
 [filter "lfs"]
 	required = true
