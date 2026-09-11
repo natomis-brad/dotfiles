@@ -12,6 +12,9 @@ Claude.md
 .bashrc
 .editorconfig
 .gitconfig
+.gitconfig-jtbatesgroup
+.gitconfig-gmail
+.gitconfig-natomis
 .gitflow_export
 .gitmodules
 .hammerspoon

@@ -18,6 +18,7 @@
 	trustExitCode = true
 [push]
 	default = current
+	gpgSign = if-asked
 [credential]
 	helper = cache --timeout=3600
 [alias]
@@ -52,7 +53,11 @@
 	pull-all = pull --recurse-submodules
 [commit]
 	template = /Users/tbbates/.stCommitMsg
-	gpgsign = false
+	gpgsign = true
+
+[includeIf "gitdir:**/JTBates/**/.git"]
+    path = ~/.gitconfig-jtbatesgroup
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -65,3 +70,5 @@
 	path = /Applications/Araxis Merge.app/Contents/Utilities/compare
 [init]
 	defaultBranch = main
+[tag]
+	gpgsign = true
