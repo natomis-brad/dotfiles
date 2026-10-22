@@ -1,3 +1,4 @@
+source ~/.profile
 #!/usr/bin/env bash
 export BASH_HOME="${BASH_HOME:-${XDG_CONFIG_HOME:-$HOME/.config}/bash}"
 if [[ -r "$BASH_HOME/.bash_profile" ]]; then

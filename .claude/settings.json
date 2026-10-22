@@ -84,7 +84,38 @@
       "mcp__tokensave__tokensave_unused_imports"
     ]
   },
+  "model": "claude-opus-5",
   "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/brad/.config/iterm2/cc-status"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/brad/.config/iterm2/cc-status"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/brad/.config/iterm2/cc-status"
+          }
+        ]
+      }
+    ],
     "PreToolUse": [
       {
         "matcher": "Agent|Grep|Bash",
@@ -116,30 +147,22 @@
             "timeout": 5
           }
         ]
-      }
-    ],
-    "UserPromptSubmit": [
+      },
       {
         "hooks": [
           {
             "type": "command",
-            "command": "/opt/homebrew/bin/tokensave",
-            "args": [
-              "hook-prompt-submit"
-            ]
+            "command": "/Users/brad/.config/iterm2/cc-status"
           }
         ]
       }
     ],
-    "Stop": [
+    "SessionEnd": [
       {
         "hooks": [
           {
             "type": "command",
-            "command": "/opt/homebrew/bin/tokensave",
-            "args": [
-              "hook-stop"
-            ]
+            "command": "/Users/brad/.config/iterm2/cc-status"
           }
         ]
       }
@@ -188,6 +211,45 @@
             "command": "\"/Users/brad/.claude/hooks/context-mode-cache-heal.mjs\""
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/brad/.config/iterm2/cc-status"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/opt/homebrew/bin/tokensave",
+            "args": [
+              "hook-stop"
+            ]
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/brad/.config/iterm2/cc-status"
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/brad/.config/iterm2/cc-status"
+          }
+        ]
       }
     ],
     "SubagentStart": [
@@ -200,6 +262,37 @@
           }
         ]
       }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/brad/.config/iterm2/cc-status"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/opt/homebrew/bin/tokensave",
+            "args": [
+              "hook-prompt-submit"
+            ]
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/brad/.config/iterm2/cc-status"
+          }
+        ]
+      }
     ]
   },
   "statusLine": {
@@ -207,29 +300,37 @@
     "command": "bash \"/Users/brad/.claude/plugins/cache/caveman/caveman/0d95a81d35a9/src/hooks/caveman-statusline.sh\""
   },
   "enabledPlugins": {
-    "frontend-design@claude-plugins-official": true,
     "caveman@caveman": true,
-    "superpowers@superpowers-marketplace": true,
+    "claude-mem-cowork@thedotmack": true,
+    "context-mode@context-mode": true,
+    "frontend-design@claude-plugins-official": true,
+    "ponytail@ponytail": true,
     "supergoal@supergoal": true,
-    "context-mode@context-mode": true
+    "superpowers@superpowers-marketplace": true
   },
   "extraKnownMarketplaces": {
-    "claude-code-plugins": {
-      "source": {
-        "source": "github",
-        "repo": "anthropics/claude-code"
-      }
-    },
     "caveman": {
       "source": {
         "source": "github",
         "repo": "JuliusBrussee/caveman"
       }
     },
-    "superpowers-marketplace": {
+    "claude-code-plugins": {
       "source": {
         "source": "github",
-        "repo": "obra/superpowers-marketplace"
+        "repo": "anthropics/claude-code"
+      }
+    },
+    "context-mode": {
+      "source": {
+        "source": "github",
+        "repo": "mksglu/context-mode"
+      }
+    },
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
       }
     },
     "supergoal": {
@@ -238,15 +339,62 @@
         "url": "https://github.com/robzilla1738/supergoal.git"
       }
     },
-    "context-mode": {
+    "superpowers-marketplace": {
       "source": {
         "source": "github",
-        "repo": "mksglu/context-mode"
+        "repo": "obra/superpowers-marketplace"
       }
+    },
+    "thedotmack": {
+      "source": {
+        "source": "github",
+        "repo": "thedotmack/claude-mem"
+      }
+    }
+  },
+  "modelSettings": {
+    "claude-opus-5": {
+      "autoCompactWindow": "auto"
     }
   },
   "tui": "fullscreen",
   "theme": "auto",
   "editorMode": "normal",
-  "terminalProgressBarEnabled": true
+  "autoCompactEnabled": true,
+  "showTurnDuration": true,
+  "terminalProgressBarEnabled": true,
+  "autoMode": {
+    "soft_deny": [
+      "$defaults",
+      "Bash(az webapp deployment slot swap:*) — scoped to app-document-prod-* (PROD slot swap)",
+      "Bash(psql:*) targeting prod-tier databases"
+    ],
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: Azure (per CLAUDE.md: Azure Blob Storage, Azure Document Intelligence, Azure Monitor/App Insights, Azure App Service deploys)",
+      "**Repository visibility**: Not queryable via gh (origin host git.jtbatesgroup.com is a self-hosted GHE/Gitea-style host, not a supported owner/repo shape) — treat as possibly public per default policy for unverified visibility; scope commits/pushes to this repo's own work only",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: GitHub Actions secrets referenced by name only: AZURE_SUBSCRIPTION_ID, AZURE_TENANT_ID, DOCUMENT_DEV_CLIENT_ID, DOCUMENT_PROD_CLIENT_ID, GH_ACTIONS_PAT, TEAMS_WEBHOOK_URL (names only, not values)",
+      "**Default / protected branches**: main (default branch, per repo facts); branch protection/rulesets not queryable via gh for this host — do not assume unprotected; CLAUDE.md states don't commit directly to main",
+      "**CI/CD deploy targets**: GitHub Actions to Azure App Service — ALPHA (app-document-dev-<DEV_LIVESTOCK_ID>/alpha slot, on push to main), BETA (same dev app, root, tag beta-*), UAT (app-document-prod-<PROD_LIVESTOCK_ID>/uat slot, tag uat-*), PROD (same prod app, slot swap staging to root, tag release-*)",
+      "**Network posture**: None configured",
+      "**Host containment**: None configured — assume Claude Code runs on an ordinary developer machine with open internet",
+      "**Source control**: This repo (git.jtbatesgroup.com:IT/jtb.document.git) and its remote only; submodules under lib/ (Jtb.Client, Jtb.Data, Jtb.Document.Client) and tools/ (buildtools, generator) are separate repos not to be edited as part of Document work unless asked",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: None configured",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: CI secret names (AZURE_SUBSCRIPTION_ID, AZURE_TENANT_ID, DOCUMENT_DEV_CLIENT_ID, DOCUMENT_PROD_CLIENT_ID, GH_ACTIONS_PAT, TEAMS_WEBHOOK_URL) — names only, never values; any document content flowing through the Document service (reads/stores/scans documents) is potentially confidential/regulated and should be shared only with audiences cleared at the named+specifics bar",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: rg-jtb-prod-eastus, asp-jtb-prod-eastus, app-document-prod-<PROD_LIVESTOCK_ID> (PROD App Service), and any namespace/host/container with prod or production as a whole word/segment (e.g. .github/workflows/deploy-prod-direct-to-slot.yml targets)",
+      "**Protected deployment namespaces / environments**: PROD (app-document-prod-<PROD_LIVESTOCK_ID>, uat slot and root/staging-swap), rg-jtb-prod-eastus, asp-jtb-prod-eastus",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, node-pool resources; infra/prod/ (Bicep under infra/<env>/ wrapping tools/buildtools/infra/ shared modules) and anything named/tagged prod or production",
+      "### User-specific",
+      "**Primary use of Claude Code**: software development (ASP.NET Core / .NET 10 service work on Jtb.Document)",
+      "**Trusted repo**: /Users/brad/Projects/JTBates/jtb.document (origin git.jtbatesgroup.com:IT/jtb.document.git) — visibility unverified, treat as possibly public; confidential material (secrets, personal/regulated data) is never cleared into it regardless",
+      "**Org-specific CLIs**: just, az, gh (per CLAUDE.md tooling guidance); dotnet, podman/container (used heavily in this project per usage recon)",
+      "no additional routine-prefix qualifiers found"
+    ]
+  }
 }

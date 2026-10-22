@@ -1,7 +1,12 @@
 {
   "trustedtaps": [
+    "aovestdipaperino/tap",
+    "chandlerroth/tap",
+    "fenio/tap",
     "mattmc3/brews",
-    "nohajc/anylinuxfs"
+    "netbirdio/tap",
+    "nohajc/anylinuxfs",
+    "wouterdebie/tap"
   ],
   "trustedcasks": [
     "fenio/tap/anylinuxfs-gui",
@@ -11,6 +16,7 @@
   "trustedformulae": [
     "aovestdipaperino/tap/tokensave",
     "chandlerroth/tap/prj",
+    "mattmc3/brews/antibody",
     "netbirdio/tap/netbird",
     "nohajc/anylinuxfs/anylinuxfs"
   ]
