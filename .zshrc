@@ -126,7 +126,9 @@ plugins=(
 
   	# Colors
   	colored-man-pages
- 
+
+	# JTB
+	zsh-jtb 
 )
 
 ##### START OMZ PLUS! ##################################################################
@@ -172,7 +174,9 @@ export PATH=$PATH:/Applications/Araxis\ Merge.app/Contents/Utilities
 
 alias pgtok="(az account get-access-token --resource https://ossrdbms-aad.database.windows.net --query accessToken --output tsv) | pbcopy"
 alias grep="/opt/homebrew/bin/rg"
-alias bud="brew cleanup && brew update && brew upgrade && brew cleanup"
+#alias bud="brew cleanup && brew update && brew upgrade && brew cleanup"
+source $HOME/.dotfiles/mybin/utils.sh
+
 export JTB_PROJECTS="${JTB_PROJECTS:-$HOME/Projects/JTBates}"
 export JTB_SSH_KEY="${JTB_SSH_KEY:-$HOME/.ssh/github_jtb}"
 export PATH="$(brew --prefix)/opt/curl/bin:$PATH"

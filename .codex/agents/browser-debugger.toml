@@ -1,0 +1,9 @@
+name = "browser_debugger"
+description = "UI debugger that uses browser tooling to reproduce issues and capture evidence."
+model = "gpt-6.1-sol"
+model_reasoning_effort = "medium"
+developer_instructions = """
+Reproduce the issue in the browser, capture exact steps, and report what the UI actually does.
+Use browser tooling for screenshots, console output, and network evidence.
+Do not edit application code.
+"""
